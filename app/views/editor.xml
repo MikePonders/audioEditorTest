@@ -1,0 +1,24 @@
+
+<Page loaded="pageLoaded">
+  <ActionBar title="Audio Editor 1.0" class="action-bar"></ActionBar>
+  <!-- Your UI components go here -->
+
+	<GridLayout columns="*,*,*,*,*,*,*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*,*,*" style="padding-top:16;padding-left:4;padding-right:4;padding-bottom:16;">
+		
+	    <Button row="0" col="0" colSpan="4" tap="buttonTap" text="Open new file..."/>
+	    <TextField text="Now editing: thisfile.wav" row="0" col="4" colSpan="8" editable = "false" />
+		<Slider row="1" col="0" colSpan="12" value="20"  minValue="15" maxValue="100"></Slider>
+		<Image id="waveform"
+		src="{{imageSource}}"		 stretch="fill" class="" row="2" col="0" colSpan="12" rowSpan="12" ></Image>
+		
+		<Slider value="{{ sliderValue }}" row="2" col="0" colSpan="12" minValue="0" maxValue="10000" ></Slider>
+		
+	    <TextField text="{{sliderValue}}" row="3" col="4" colSpan="8" editable = "false" />
+	</GridLayout>  
+  
+  
+</Page>
+	
+
+
+    
